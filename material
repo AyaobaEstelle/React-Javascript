@@ -1,0 +1,11 @@
+{ title: 'My new website', body: 'i am a frontend developer', author: 'Esther', id: 1 },
+    { title: 'Welcome party!', body: 'i am a frontend developer', author: 'Ayaoba', id: 2 },
+    { title: 'Web dev top tips', body: 'i am a frontend developer', author: 'Ayaoba', id: 3 }
+
+
+    const [name, setName] = useState('Ayaoba');
+
+    const handleDelete = (id) => {
+        const newBlogs = blogs.filter(blog => blog.id !== id);
+        setBlogs(newBlogs);
+     }
